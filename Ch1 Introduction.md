@@ -37,10 +37,10 @@
 >   ![image](https://github.com/joey0919/database-system/assets/87600842/b6f23aa8-5f10-498e-ade3-3be98ccd4894)
 
 ## A Sample Relational Database
->   ![Alt text](image-1.png)
+>   ![image-1](https://github.com/joey0919/database-system/assets/87600842/61d9bc77-1279-4fa1-9ae8-fd43bfeea7dc)
 
 ## Database system architecture
->   ![Alt text](image-2.png)
+>   ![image-2](https://github.com/joey0919/database-system/assets/87600842/690240c7-9d61-4785-a20e-a1b314abe9e2)
 
 ## Instances and Schemas (인스턴스 및 스키마)
 >   * Logical Schema (논리적 스키마)
@@ -50,7 +50,7 @@
 >   * Instance
 >       * 특정 시점의 데이터베이스 실제 내용
 >
->   ![Alt text](image-3.png)
+>   ![image-3](https://github.com/joey0919/database-system/assets/87600842/14e78582-9979-44c1-8c6f-3c49e793dcb3)
 
 ## Physical Data Independence
 >   * 물리적 데이터 독립성
@@ -166,7 +166,7 @@
 >           * 클라이언트 측에서는 일반적으로 forms 인터페이스를 통해 애플리케이션 서버와 통신
 >           * 애플리케이션 서버는 데이터베이스 시스템과 통신하여 데이터에 엑세스
 >
->   ![Alt text](image-4.png)
+>   ![image-4](https://github.com/joey0919/database-system/assets/87600842/7aec8b30-121b-436c-84c5-78a78c378203)
 
 ## Database Users
 >   * Native users - 이전에 작성된 응용 프로그램 중 하나를 호출하여 시스템과 상호작용하는 복잡하지 않은 사용자
