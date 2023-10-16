@@ -34,7 +34,7 @@
 >   * 모든 데이터는 다양한 테이블에 저장됨
 >   * 관계형 모델의 표 형식 데이터 예
 >
->   ![Alt text](https://github.com/joey0919/database-system/blob/main/Ch1%20Introduction.md/image.png)
+>   ![Alt text](https://github.com/joey0919/database-system/blob/47c08374f111d0c9faf3683a139b1f379e1cbfd3/image.png)
 
 ## A Sample Relational Database
 >   ![Alt text](image-1.png)
