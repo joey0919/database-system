@@ -1,4 +1,4 @@
-# Relational Model
+# Ch2 Relational Model
 
 ## Relational Model (관계형 모델)
 >   * 관계형 모델은 오늘날 상용 데이터 처리 애플리케이션을 위한 기본 데이터 모델이다.
