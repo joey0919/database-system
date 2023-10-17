@@ -49,53 +49,53 @@
 ## Left Outer Join
 >   * course natural left outer join prereq
 >   
->       ![Alt text](image-38.png)
+>       ![image-38](https://github.com/joey0919/database-system/assets/87600842/4640ea90-044a-4c0c-948f-023014bb55de)
 >   * In relational algebra:
 >   
->       ![Alt text](image-39.png)
+>       ![image-39](https://github.com/joey0919/database-system/assets/87600842/454d6c52-57c3-48bc-bac4-c0fea69cb8c8)
 
 
 ## Right Outer Join
 >   * course natural right outer join prereq
 >   
->       ![Alt text](image-40.png)
+>       ![image-40](https://github.com/joey0919/database-system/assets/87600842/cd5cbd4c-0244-4418-874f-5eaab86673df)
 >   * In relational algebra
 >  
->       ![Alt text](image-41.png)
+>       ![image-41](https://github.com/joey0919/database-system/assets/87600842/be1dae3d-2df1-4c51-a410-1721badae305)
 
 
 ## Full Outer Join
 >   * course natural full outer join prereq
 >   
->       ![Alt text](image-42.png)
+>       ![image-42](https://github.com/joey0919/database-system/assets/87600842/dbb7e338-9964-48a8-acf4-c41c546edf2c)
 >   * In relational algebra:
 >
->       ![Alt text](image-43.png)
+>       ![image-43](https://github.com/joey0919/database-system/assets/87600842/d791e60a-4cb9-46e8-948a-b25a120fdd67)
 
 ## Joined Types and Conditions
 >   * Join 작업은 두 개의 관계를 취하여 결과적으로 다른 관계를 반환
 >   * 이러한 추가 작업은 일반적으로 하위 쿼리 표현식으로 FROM 절에서 사용
 >   
->       ![Alt text](image-44.png)
+>       ![image-44](https://github.com/joey0919/database-system/assets/87600842/e3b1cfde-a937-4a99-a20f-37790784a9ce)
 
 ## Joined Relations - Examples
 >   * course natural right outer join prereq
 >   
->       ![Alt text](image-45.png)
+>       ![image-45](https://github.com/joey0919/database-system/assets/87600842/a082731c-75cd-4f39-ad19-b03ff3d013e3)
 >   * course full outer join prereq using (course_id)
 >       
->       ![Alt text](image-46.png)
+>       ![image-46](https://github.com/joey0919/database-system/assets/87600842/fba11328-ec62-4f0d-bb59-9e053251ec12)
 >   * course inner join prereq on course.course_id = prereq.course_id
 >   
->       ![Alt text](image-47.png)
+>       ![image-47](https://github.com/joey0919/database-system/assets/87600842/9378c13b-6438-4af3-a265-e5e9c70a00a4)
 >   * course left outer join prereq on course.course_id = prereq.course_id
->       ![Alt text](image-48.png)
+>       ![image-48](https://github.com/joey0919/database-system/assets/87600842/b6a37ade-2753-4411-8604-49501932eda2)
 >   * course natural right outer join prereq
 >       
->       ![Alt text](image-49.png)
+>       ![image-49](https://github.com/joey0919/database-system/assets/87600842/4f87679d-4ad9-485c-ae5c-178323528b92)
 >   * course full outer join prereq using (course_id)
 >   
->       ![Alt text](image-50.png)
+>       ![image-50](https://github.com/joey0919/database-system/assets/87600842/71e7c7c6-1d0b-4656-83e2-7617d7a0d86b)
 
 
 ## View
@@ -234,4 +234,4 @@
 >   * 시스템이 특정 값을 가진 레코드를 찾기 위해 모든 레코드를 읽는 것은 비효율적이다.
 >   * Index 관계의 속성에 대한 데이터 구조는 데이터베이스 시스템이 관계의 모든 튜플을 검색하지 않고도 해당 속성에 대해 지정된 값을 갖는 관계에서 해당 튜플을 효율적으로 찾을 수 있도록 하는 데이터 구조
 >   * create index name on relation-name (attribute);
->       ![Alt text](image-51.png)
+>       ![image-51](https://github.com/joey0919/database-system/assets/87600842/cf47e981-48aa-4cc7-9988-1ec3ecfe5fb8)
