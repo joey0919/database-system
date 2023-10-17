@@ -30,11 +30,13 @@
 >   1. 슈퍼키(Super Key)
 >       * 테이블에서 각 행을 유일하게 식별할 수 있는 하나 똔느 그 이상의 속성들의 집합
 >       * 유일성이란 하나의 키로 특정 행을 바로 찾아낼 수 있는 고유한 데이터 속성
->       ![image-7](https://github.com/joey0919/database-system/assets/87600842/90d3dda4-2207-401d-bc3d-aa1fb9938e4e)
+>
+>          ![image-7](https://github.com/joey0919/database-system/assets/87600842/90d3dda4-2207-401d-bc3d-aa1fb9938e4e)
 >   2. 후보키
 >       * 각 행을 유일하게 식별할 수 있는 최소한의 속성들의 집합
->       * 유일성과 최소성을 동시에 만족해야 한다.
->       ![image-8](https://github.com/joey0919/database-system/assets/87600842/9cd16ffb-2025-4563-8f2c-0adf95171735)
+>       * 유일성과 최소성을 동시에 만족해야 한다.     
+>
+>         ![image-8](https://github.com/joey0919/database-system/assets/87600842/9cd16ffb-2025-4563-8f2c-0adf95171735)
 >   3. 기본키
 >       * 후보키들 중에서 하나를 선택한 키로 최소성과 유일성을 만족하는 속성
 >       * 테이블 안에서 유일하게 각 행들을 구별할 수 있도록 쓰인다.
@@ -45,7 +47,8 @@
 >   5. 외래키
 >       * 다른 테이블의 데이터를 참조할 때 없는 값을 참조할 수 없도록 제약을 주는 것
 >       * 참조될 (A)열의 값은 참조될(A) 테이블에서 기본키로 설정되어 있어야한다.
->       ![image-9](https://github.com/joey0919/database-system/assets/87600842/564d8d9b-efce-4979-b4e0-310fba965913)
+>
+>          ![image-9](https://github.com/joey0919/database-system/assets/87600842/564d8d9b-efce-4979-b4e0-310fba965913)
 
 ## Relational Query Languages
 >   * 절차적, 비절차적 또는 선언적
