@@ -68,7 +68,7 @@
 >       * Alter Table r drop A
 
 ## Basic Query Structure
->   ![Alt text](image-36.png)
+>   ![image-36](https://github.com/joey0919/database-system/assets/87600842/a658348c-a781-49d3-923b-d2feb3ef0430)
 
 ## The select Clause
 >   * 모든 강사의 학과명을 찾아 중복 제거
@@ -146,7 +146,7 @@
 ## Self Join Example
 >   * 예제
 >
->       ![Alt text](image-37.png)
+>       ![image-37](https://github.com/joey0919/database-system/assets/87600842/c641a1fd-9e62-4410-a2ac-750e0649edd5)
 >   *  Find the supervisor of “Bob”
 >   *  Find the supervisor of the supervisor of “Bob”
 >   *  Can you find ALL the supervisors (direct and indirect) of “Bob”?
