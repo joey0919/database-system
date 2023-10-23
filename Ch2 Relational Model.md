@@ -91,7 +91,7 @@
 >       
 >       ![image-13](https://github.com/joey0919/database-system/assets/87600842/80cdd781-376f-486f-8a69-a691d5c32b3a)
 >   * 선택 술어에는 두 속성 간의 비교가 포함될 수 있다
->       * 예를들어 이름이 건물 이름과 동일한 모든 부서를 찾는다.
+>       * 예를들어 이름이 building과 동일한 모든 부서를 찾는다.
 >     
 >         ![image-14](https://github.com/joey0919/database-system/assets/87600842/768ed2d6-1fd3-486c-b84d-54adb68e9cfb)
 
