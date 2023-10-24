@@ -131,7 +131,7 @@
 >       ![image-24](https://github.com/joey0919/database-system/assets/87600842/d1eee5ce-50d3-4fcd-be92-3b49e18cec5f)
 
 ## Union Operation
->   * Union 연산을 이용하면 두 관걔를 결합할 수 있다.
+>   * Union 연산을 이용하면 두 관계를 결합할 수 있다.
 >   * 표기법
 >
 >       ![image-25](https://github.com/joey0919/database-system/assets/87600842/47a5d5fe-3327-413e-b2a9-66fe75e59d33)
