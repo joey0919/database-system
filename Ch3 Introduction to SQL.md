@@ -346,7 +346,7 @@
 >                     AND R.year = 2017)
 >       ```
 
-## Subqueries in the Form Clause
+## Subqueries in the From Clause
 >   * 평균 급여가 $42,000보다 큰 부서의 평균 강사 급여를 찾아보시오.
 >       ```
 >       SELECT dept_name, avg_salary
