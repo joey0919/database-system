@@ -202,7 +202,7 @@
 >       WHERE (instructor.ID, dept_name) = (teaches.ID, 'Biology')
 >       ``` 
 
-## SEt Operations
+## Set Operations
 >   * union
 >   * intersect
 >   * except
