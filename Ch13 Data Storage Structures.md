@@ -13,14 +13,14 @@
 >       * 레코드 i는 n*(i-1) 부터 시작된다. n은 레코드의 크기이다.
 >       * 레코드 접근은 간단하지만 블록을 넘을 수 있다
 >       * 수정: 레코드가 블록 경계를 넘는 것을 허용하지 않는다.
->       * ![image-52](https://github.com/joey0919/database-system/assets/87600842/f97b356b-2916-46b1-b79e-8d9dae2e8d43)
+>       * ![Alt text](image-52.png)
 >   * i 레코드 삭제시 대안
 >       * move records i + 1, . . ., n to i, . . . , n – 1 (Record 3 deleted)
->       * ![image-53](https://github.com/joey0919/database-system/assets/87600842/f225904f-bf0c-4d68-b9ab-68aa7e160b7b)
+>       * ![Alt text](image-53.png)
 >       * move record n to i (Record 3 deleted and replaced by record 11)
->       * ![image-54](https://github.com/joey0919/database-system/assets/87600842/51632df7-ffa1-48ac-b4e8-666748613975)
+>       * ![Alt text](image-54.png)
 >       * 레코드를 이동하지 않고 free list의 모든 free레코드를 연결한다. (do not move records, but link all free records on a free list)
->       * ![image-55](https://github.com/joey0919/database-system/assets/87600842/3f6d9cf2-0829-4df8-9713-2f460f3d5150)
+>       * ![Alt text](image-55.png)
 
 ## Variable-Length Records (가변길이 레코드)
 >   * 가변 길이 레코드는 데이터베이스 시스템에서 여러 가지 방법으로 발생한다.
@@ -30,10 +30,11 @@
 >   * 속성은 순서대로 저장된다.
 >   * 고정된 크기(offset, length)로 표현되는 가변 길이 속성. 모든 고정 길이 속성 뒤에 실제 데이터가 저장됨.
 >   * 널값 비트맵으로 표현되는 널값
-> ![image-56](https://github.com/joey0919/database-system/assets/87600842/2577f7a2-2263-488b-8f09-9b294e5e54bd)
+>
+> ![Alt text](image-56.png)
 
 ## 가변 길이 레코드: 슬롯 페이지 구조
->   ![image-57](https://github.com/joey0919/database-system/assets/87600842/b9e7297c-3691-4994-b2f3-0e8433424a2f)
+>   ![Alt text](image-57.png)
 >   * 슬롯 페이지 헤더에는 다음이 포함된다.
 >       * 레코드 항목 수
 >       * 블록의 여유 공간 끝
@@ -66,16 +67,16 @@
 >   * Free-space map
 >       * 블록당 항목이 1개인 배열이다. 각 항목은 몇 비트에서 바이트이며 사용 가능한 블록의 일부를 기록한다.
 >       * 아래 예에서 블록당 3비트, 값을 8로 나눈 값은 사용 가능한 블록의 비율을 나타낸다.
->           * ![image-58](https://github.com/joey0919/database-system/assets/87600842/50005536-456b-4572-bd94-b9a77617b038)
+>           * ![Alt text](image-58.png)
 >       * 2단계 second-level free-space map을 가질 수 있다.
 >       * 아래 예에서 각 항목은 첫 번째 수준 자유 공간 맵의 최대 4개 항목을 저장한다.
->           * ![image-59](https://github.com/joey0919/database-system/assets/87600842/06caa67a-73e5-443a-9283-2e9094a1fe91)
+>           * ![Alt text](image-59.png)
 >   * 주기적으로 디스크에 Free-space map이 기록된다. 일부 항목에 대해 잘못된(이전)값이 있어도 괜찮다.(감지 및 수정 예정)
 
 ## Sequential File Organization
 >   * 전체 파일을 순차적으로 처리해야 하는 애플리케이션에 적합
 >   * 파일의 레코드는 search-key 순서로 정렬된다.
->       * ![image-60](https://github.com/joey0919/database-system/assets/87600842/9afeb3f0-423a-4030-b3ee-6be595ded837)
+>       * ![Alt text](image-60.png)
 >   * 삭제 - 포인터 체인 사용
 >   * 삽입 - 레코드가 삽입될 위치를 찾는다.
 >       * 여유 공간이 있으면 그곳에 삽입한다.
@@ -85,7 +86,7 @@
 
 ## Multitable Clustering File Organization
 >   * 다음을 사용하여 여러 관계를 하나의 파일에 저장한다. Multitable Clustering File Organization
->   ![image-62](https://github.com/joey0919/database-system/assets/87600842/7b2498c0-28e0-42bc-bbd9-c5f3a9270f6c)
+>   ![Alt text](image-62.png)
 >   * 다음과 관련된 쿼리에 적합하다. department ⨝ instructor (단일 부서 및 해당 강사와 관련된 쿼리의 경우)
 >   * only department와 관련된 쿼리에는 적합하지 않다. 
 >   * 결과적으로 가변 크기 레코드가 생성된다.
@@ -103,7 +104,7 @@
 >           * 예: transaction 현재 연도의 partition은 SSD에, 이전 연도의 파티션은 Magnetic disk에 저장
 
 ## Data Dictionary Storage
->   * 데이터에 대한 대이터 이다.
+>   * 데이터에 대한 데이터 이다.
 >   * 관계에 대한 정보
 >       * 관계의 이름
 >       * 각 관계의 속성 이름, 유형 및 길이
@@ -118,7 +119,7 @@
 >   * 인덱스에 대한 정보
 
 ## Relational Representation of System Metadata (시스템 메타데이터의 관계형 표현)
->   ![image-63](https://github.com/joey0919/database-system/assets/87600842/43863b6e-3455-4680-a3d9-1b946dafc046)
+>   ![Alt text](image-63.png)
 
 ## Storage Access
 >   * 블록은 스토리지 할당과 데이터 전송의 단위이다.
@@ -156,7 +157,8 @@
 >   * 쿼리에는 잘 정의된 엑세스 패턴(Sequential scans)이 있으며 데이터베이스 시스템은 사용자 쿼리의 정보를 사용하여 향후 참조를 예측할 수 있다.
 >   * 쿼리 최적화 프로그램에서 제공하는 대체 전략에 대한 힌트와 혼합 전략이 바람직하다.
 >   * LRU에 대한 잘못된 액세스 패턴의 예: 중첩 루프로 2개의 관계 r과 s의 조인을 계산할 때
->   ![image-64](https://github.com/joey0919/database-system/assets/87600842/a1f4fde8-ef15-45da-bad9-aaa0d8eaf445)
+>
+>       ![Alt text](image-64.png)
 >   * Toss-immediate strategy - 해당 블록의 마지막 튜플이 처리되자마자 해당 블록이 차지한 공간을 해제한다.
 >   * 가장 최근에 사용된(MRU)전략 - 시스템은 현재 처리 중인 블록을 고정해야 한다. 해당 블록의 마지막 튜플이 처리된 후 블록의 고정이 해제되고 가장 최근에 사용된 블록이 된다.
 >   * 버퍼 관리자는 요청이 특정 관계를 참조할 확률에 관한 통계 정보를 사용할 수 있다.
@@ -176,7 +178,8 @@
 
 ## Column-Oriented Storage
 >   * 관계의 각 속성을 별도로 저장
->   ![image-65](https://github.com/joey0919/database-system/assets/87600842/e04fb670-0250-455b-abde-5ccddaaabb19)
+>
+>   ![Alt text](image-65.png)
 
 ## Columnar Representation
 >   * Benefits:
@@ -194,10 +197,11 @@
 >       * Called hybrid row/column stores
 
 ## Columnar File Representation
->   ![image-66](https://github.com/joey0919/database-system/assets/87600842/c75db81c-920d-4f94-a70b-11edfcdb5122)
+>   ![Alt text](image-66.png)
 
 ## 메인 메모리 데이터베이스의 저장 조직
 >   * 버퍼 관리자 없이 메모리에 직접 레코드를 저장할 수 있다.
 >   * Column-oriented storage는 의사 결정을 위해 in-memory로 사용될 수 있다.
 >       * 압축 감소 메모리 요구사항
->   ![image-67](https://github.com/joey0919/database-system/assets/87600842/3ff25096-061d-47d7-843e-e36730b822f1)
+>
+>   ![Alt text](image-67.png)
