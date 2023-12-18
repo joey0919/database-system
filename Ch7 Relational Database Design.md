@@ -7,10 +7,10 @@
 >   * 이는 inst_dept를 분해해야 하는 필요성을 나타낸다.
 >   * 손실이 있는 분해
 >
->   ![Alt text](image-104.png)
+>   ![image-104](https://github.com/joey0919/database-system/assets/87600842/1bee6305-6fdb-43b1-9e4b-9e0222942e05)
 
 ## Example of Lossless-Join Decomposition (무손실 조인 분해의 예)
->   ![Alt text](image-105.png)
+>   ![image-105](https://github.com/joey0919/database-system/assets/87600842/7871920c-3903-4800-bc6e-e3f16ef54dba)
 
 ## First Normal Form (첫 번째 정규형)
 >   * 도메인은 원자적이라면, 해당 도메인의 요소들이 분할될 수 없는 단위로 간주된다.
@@ -49,15 +49,15 @@
  >  * 아직 이벤트에 참여하지 않은 아이디가 "melon"이고 이름이 "성원용", 등급이 "gold"인 신규 고객의 데이터는 이벤트참여 릴레이션에 삽입할 수 없음.
  >  * 삽입하려면 실제로 참여하지 않은 임시 이벤트번호(혹은 NULL)를 삽입해야 함
  >
- >  ![Alt text](image-106.png)
+ >  ![image-106](https://github.com/joey0919/database-system/assets/87600842/557c35a7-b9e1-4905-978b-8906d32bc5b5)
 
  ## Update Anomaly
  >  * 아이디가 "apple"인 고객의 등급이 "gold"에서 "vip"로 변경되었는데, 일부 tuple에 대해서만 등급이 수정된다면, "apple" 고객이 서로 다른 등급을 가지는 모순이 발생
->   ![Alt text](image-107.png)
+>   ![image-107](https://github.com/joey0919/database-system/assets/87600842/ee21574a-4829-44a1-a0e6-49b72405a9fb)
 
  ## Delete Anomaly
  >  * 아이디가 "orange"인 고객이 이벤트 참여를 취소해 관련 튜플을 삭제하게 되면 이벤트 참여와 관련이 없는 고객아이디, 고객이름, 등급데이터까지 손실됨.
- >  ![Alt text](image-108.png)
+ >  ![image-108](https://github.com/joey0919/database-system/assets/87600842/41120033-24fb-4363-9a04-d9760826abfe)
 
  ## Goals of Normalization
  >  * 정규화는 데이터베이스 설계에서 중복을 최소화 하고 데이터의 일관성을 유지하기 위한 과정으로, 관계형 데이터베이스에서는 함수 종속성(FD)이나 다른 종속성 규칙을 기반으로 한다.
@@ -73,14 +73,14 @@
 ## 제 1 정규형 (1NF, First Normal Form)
 >   * 릴레이션의 모든 속성이 더는 분해되지 않는 원자 값(atomic value)만 가지면 제 1 정규형을 만족함
 >   * 제 1 정규형을 만족해야 관계 데이터베이스의 릴레이션이 될 자격이 있음
->   ![Alt text](image-109.png)
->   ![Alt text](image-110.png)
->   ![Alt text](image-111.png)
+>   ![image-109](https://github.com/joey0919/database-system/assets/87600842/7590a847-261d-4118-9d76-9da641e6ad33)
+>   ![image-110](https://github.com/joey0919/database-system/assets/87600842/471e4ccc-441c-44b1-8dc2-7116fb12b716)
+>   ![image-111](https://github.com/joey0919/database-system/assets/87600842/201b3a79-e6b3-4572-8e19-5026120521f6)
 
 ## 제 2 정규형 (2NF, Second Normal Form)
 >   * 릴레이션이 제 1 정규형에 속하고 primary key가 아닌 모든 속성이 primary key에 FFD되면 제 2 정규형을 만족함
->   ![Alt text](image-112.png)
->   ![Alt text](image-113.png)
+>   ![image-112](https://github.com/joey0919/database-system/assets/87600842/8f1e2708-af19-4af1-b6c0-e72a479b21b6)
+>   ![image-113](https://github.com/joey0919/database-system/assets/87600842/02718ea8-be4d-43fd-b116-387714379460)
 
 ## 제 3 정규형 (3NF, Third Normal Form)
 >   * 릴레이션이 제 2 정규형에 속하고, primary key가 아닌 모든 속성이 primary key에 transitivity 성질이 없으면 제 3 정규형을 만족함
@@ -91,9 +91,9 @@
 >   * 의미: 강한 제 3 정규형(strong 3NF)
 >       * Candidate key를 여러 개 가지고 있는 릴레이션에 발생할 수 있는 이상 현상을 해결하기 위해 제 3 정규형 보다 좀 더 엄격한 제약조건을 제시
 >       * 보이스/코드 정규형에 속하는 모든 릴레이션은 제 3 정규형에 속하지만, 제 3 정규형에 속하는 모든 릴레이션이 보이스/코드 정규형에 속하는 것은 아니다.
->   ![Alt text](image-114.png)
->   ![Alt text](image-115.png)
->   ![Alt text](image-116.png)
+>   [image-114](https://github.com/joey0919/database-system/assets/87600842/fdaacbdf-e16f-42cb-8c47-e1f455b77bbe)
+>   ![image-115](https://github.com/joey0919/database-system/assets/87600842/43694b27-b675-4e89-8670-298a01d5a128)8904!
+>   ![image-116](https://github.com/joey0919/database-system/assets/87600842/83a903cd-db03-4924-9b97-86e9228bdf7c)
 
 ## Lossless Decomposition (무손실 분해)
 >   * R = (R1, R2)인 경우, 모든 가능한 관계 r에 대해 r = ∏R1 (r ) ∏R2 (r )이 성립해야 합니다. 즉, R의 모든 속성을 R1과 R2로 분해하였을 때, 원래의 관계 r을 복원할 수 있어야 한다
