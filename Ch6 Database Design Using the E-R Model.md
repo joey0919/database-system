@@ -44,7 +44,7 @@
 >   * 엔티티는 속성 집합으로 표현된다. 즉, 엔터티 집합의 모든 구성원이 소유한 설명 속성
 >       * 예: instructor = (ID, name, salary), course= (course_id, title, credits)
 >   * 속성의 하위 집합은 기본 키 엔터티 세트 즉, 집합의 각  구성원을 고유하게 식별한다.
->   ![Alt text](image-76.png)
+>   ![image-76](https://github.com/joey0919/database-system/assets/87600842/b4c80a55-0b27-4bae-a135-48196a5095fd)
 
 ## ER 다이어그램에서 엔터티 집합 표현
 >   엔터티 집합은 다음과 같이 그래픽으로 표현될 수 있다.
@@ -55,20 +55,20 @@
 ## Relationship Sets
 >   * relationship은 여러 엔터티 간의 연결이다.
 >   * Example: 
->       ![Alt text](image-77.png)
+>       ![image-77](https://github.com/joey0919/database-system/assets/87600842/a0d0f9e7-1dfc-4bf2-839e-ae2617593795)
 >   * 예 관계 집합을 정의한다. 학생과 조언자 역할을 하는 강사 간의 연관성을 나타낸다.
 >   * 그림으로 관련 엔터티 사이에 선을 그린다.
->   ![Alt text](image-78.png)
+>   ![image-78](https://github.com/joey0919/database-system/assets/87600842/5c85ee3c-d951-4907-a32c-4bf5268544a3)
 
 ## ER 다이어그램을 통해 관계 집합 표현
 >   * 다이아몬드는 관계 집합을 나타낸다.
->   ![Alt text](image-79.png)
+>   ![image-79](https://github.com/joey0919/database-system/assets/87600842/0874c623-8897-4756-a4ff-c144e3ed88ff)
 >   * 속성은 관계 세트와 연관될 수도 있다.
 >   * 예를 들어, 엔터티 사이의 advisor 관계 집합은 강사를 설정한다. 그리고 학생은 학생이 언제인지 추적하는 속성 날짜를 가질 수 있다.
->   ![Alt text](image-80.png)
+>   ![image-80](https://github.com/joey0919/database-system/assets/87600842/3e97fcbb-f907-4229-a474-537a7bdbdb3f)
 
 ## 속성이 있는 관계 세트
->   ![Alt text](image-81.png)
+>   ![image-81](https://github.com/joey0919/database-system/assets/87600842/be1d2b97-9150-4e9b-a1ca-86176b66d5cd)
 
 ## Roles
 >   * 관계의 엔터티 집합은 고유할 필요가 없다.
@@ -87,7 +87,7 @@
 >   * 대부분의 관계 세트는 바이너리이다.
 >   * 관계를 이진법이 아닌 것으로 표현하는 것이 더 편리한 경우가 있다.
 >   * 삼항 관계가 있는 E-R 다이어그램
->   ![Alt text](image-82.png)
+>   ![image-82](https://github.com/joey0919/database-system/assets/87600842/e6900c7b-bf28-471c-b0e9-ff4463d35a09)
 
 ## Complex Attributes (복합 속성)
 >   * 속성 유형
@@ -98,10 +98,10 @@
 >           * 다른 속성으로부터 계산 가능
 >           * 예: 나이, 생년월일 지정
 >       * 도메인 - 각 속성에 허용되는 값 세트
->   ![Alt text](image-83.png)
+>   ![image-83](https://github.com/joey0919/database-system/assets/87600842/35c8c75a-4afe-4b6d-b378-affb39d21d49)
 
 ## ER 다이어그램에서 복잡한 속성 표현
->   ![Alt text](image-84.png)
+>   ![image-84](https://github.com/joey0919/database-system/assets/87600842/9fe7f8c3-49bb-4eed-bcb0-392d7f689b07)
 
 ## Mapping Cardinality Constraints (카디널리티 제약조건 매핑)
 >   * 관계 집합을 통해 다른 엔터티와 연관될 수 있는 엔터티 수를 표현한다.
@@ -113,8 +113,8 @@
 >       * Many to Many
 
 ## 카디널리티 매핑
->   ![Alt text](image-85.png)
->   ![Alt text](image-86.png)
+>   ![image-85](https://github.com/joey0919/database-system/assets/87600842/62165615-d887-40ad-8133-e32d178a7be0)
+>   ![image-86](https://github.com/joey0919/database-system/assets/87600842/81a232b0-04b3-465f-8284-d4602d86762e)
 
 ## ER 다이어그램에서 카디널리티 제약 조건 표현
 >   * 방향성 선 (->), 관계 세트와 엔터티 사이의 "one"을 의미
@@ -122,20 +122,20 @@
 >   * One-to-one 관계 instructor, student
 >       * 학생은 관계를 통해 최대 한 명의 강사와 연결된다.
 >       * 학생은 stud_dep을 통해 최대 한 학과와 연결되어 있다.
->       ![Alt text](image-87.png)
+>       ![image-87](https://github.com/joey0919/database-system/assets/87600842/dc2aeb6c-d737-4d29-8f6d-0853267af387)
 >   * One-to-Many 관계
 >
->       ![Alt text](image-88.png)
+>       ![image-88](https://github.com/joey0919/database-system/assets/87600842/d0b2defe-5cc5-4461-924f-bc512b27072b)
 >   * Many-to-One 관계
 >
->       ![Alt text](image-89.png)
+>       ![image-89](https://github.com/joey0919/database-system/assets/87600842/ea178e7e-891b-47c3-9cf9-40c15e1887fb)
 >   * Many-to-Many 관계
 >
->       ![Alt text](image-90.png)
+>       ![image-90](https://github.com/joey0919/database-system/assets/87600842/fdc0023d-b8b2-4e6d-85be-8baf24963032)
 
 ## Total and Partial Participation (전체 및 부분 참여)
 >   * 전체 참여(이중선으로 표시): 엔터티 집합의 모든 엔터티는 관계 집합의 적어도 하나의 관계에 참여
->   ![Alt text](image-91.png)
+>   ![image-91](https://github.com/joey0919/database-system/assets/87600842/c2a56e32-bbad-4e3a-9a1c-d2080abd7369)
 >   * 모든 학생은 관련강사가 있어야 한다.
 >   * 부분 참여 일부 개체는 관계 집합의 어떤 관계에도 참여하지 않을 수 있다.
 
@@ -145,7 +145,7 @@
 >       * 최대값 1은 엔터티가 최대 하나의 관계에 참여함을 나타낸다.
 >       * 최대값 *은 제한이 없음을 나타낸다
 >
->       ![Alt text](image-92.png)
+>       ![image-92](https://github.com/joey0919/database-system/assets/87600842/70115b1b-8fb5-484b-aaaa-d06f7c999c5e)
 >   * 강사는 0명 이상의 학생에게 조언을 할 수 있다. 학생에게는 1명의 강사가 있다 여러명의 강사를 가질 수 없다.    
 
 ## Primary Key
@@ -188,7 +188,7 @@
 >       * E-R 다이어그램에서 약한 엔터티 세트는 이중 직사각형을 통해 표시된다.
 >       * 점선으로 설정된 약한 엔터티의 판별자에 밑줄을 긋는다.
 >       * 약한 엔터티 집합을 식별하는 강한 엔터티 집합에 연결하는 관계집합은 이중 다이아몬드로 표시한다.
->       * ![Alt text](image-93.png)
+>       * ![image-93](https://github.com/joey0919/database-system/assets/87600842/f2f6dabf-ee1f-4df5-b13f-ca33a11e95d0)
 
 ## Reduction to Relation Schemas (관계 스키마로의 축소)
 >   * 엔터티 집합과 관계 집합은 다음과 같이 균일하게 표현될 수 있다.
@@ -198,11 +198,11 @@
 
 ## 엔터티 집합 표현
 >   * 강력한 엔터티 집합은 동일한 속성을 가진 스키마로 축소된다.
->       * ![Alt text](image-94.png)
+>       * ![image-94](https://github.com/joey0919/database-system/assets/87600842/e8cf9bb4-0fac-497c-a3d8-631463fd4c43)
 >   * 약한 엔터티 집합은 식별 가능한 강력한 엔터티 집합의 기본 키에 대한 컬럼을 포함하는 테이블이 된다.
->       * ![Alt text](image-95.png)
+>       * ![image-95](https://github.com/joey0919/database-system/assets/87600842/f6228906-1367-4265-81f6-08e3e4d09426)
 >   * Example:
->       ![Alt text](image-96.png)
+>       ![image-96](https://github.com/joey0919/database-system/assets/87600842/74886d15-b7cd-423e-92e7-558c03e4f781)
 
 ## 복합 속성을 사용한 엔터티 세트 표현
 >   * 각 구성요소 속성에 대해 별도의 속성을 생성하여 복합속성을 평면화 한다.
@@ -210,9 +210,9 @@
 >       * 모호성이 없으면 접두사 생략 가능
 >   * 다중값 속성을 무시하면 확장된 instructor 스키마는 다음과 같다.
 >
->   ![Alt text](image-97.png)
+>   ![image-97](https://github.com/joey0919/database-system/assets/87600842/ca9e5b29-7997-4596-9a72-46582060c32d)
 >
->   ![Alt text](image-98.png)
+>   ![image-98](https://github.com/joey0919/database-system/assets/87600842/c86327e7-d828-4f55-a8e7-90468c898c5d)
 
 ## 다중값 특성을 가진 엔터티 집합 표현
 >   * 하나의 엔터티 E의 다중 값 속성 M은 별도의 스키마 EM으로 표현된다.
@@ -223,16 +223,16 @@
 ## 관계 집합 표현
 >   * 다대다 관계 집합은 참여하는 두 엔터티 집합의 기본 키에 대한 속성과 관계집합의 설명 속성을 포함하는 스키마로 표시된다.
 >   * 예: 관계 집합에 대한 스키마 조언자
->   * ![Alt text](image-100.png)
+>   * ![image-100](https://github.com/joey0919/database-system/assets/87600842/1342f8eb-b0ed-4b95-81a4-b7e21ecf3881)
 
 ## 스키마 중복
 >   * 다대일 및 일대다 관계 세트는 "1" 측의 기본 키를 포함하는 "다"측에 추가 속성을 추가하여 나타낼 수 있다.
 >   * 예: 관계 집합에 대한 스키마를 생성하는 대신 inst_dept속성을 추가하여 instructor 엔터티 집합에서 파생된 스키마에 dept_name을 추가한다.
->   ![Alt text](image-101.png)
+>   ![image-101](https://github.com/joey0919/database-system/assets/87600842/3951c643-04d2-4b9d-a005-949bb7d2e661)
 >   * 일대일 관계 집합의 경우 어느 쪽이든 "다" 쪽 역할을 하도록 선택할 수 있다.
 >       * 즉, 두 엔터티 집합에 해당하는 테이블 중 하나에 추가 속성을 추가할 수 있다.
 >   * 만약 참여가 "many"쪽에서 부분적이라면 스키마를 "many"쪽에 해당하는 스키마에 추가속성으로 교체하는것은 null이 발생할 수 있다.
 
 ## E-R 표기법에 사용되는 기호 요약
->   ![ㅇ](image-102.png)
->   ![Alt text](image-103.png)
+>   ![image-102](https://github.com/joey0919/database-system/assets/87600842/3b1953fb-14a1-4673-af32-4adcb645021d)
+>   ![image-103](https://github.com/joey0919/database-system/assets/87600842/f4f620df-a1bf-44cb-898d-089f2a92006f)
