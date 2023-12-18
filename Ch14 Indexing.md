@@ -5,7 +5,7 @@
 >   * Search Key - 파일에서 레코드를 조회하는 데 사용되는 속성 집합에 대한 속성이다.
 >   * index file은 레코드들(index entries)로 구성된다.
 >
->       ![Alt text](image-68.png)
+>       ![image-68](https://github.com/joey0919/database-system/assets/87600842/4f7d6139-3778-4434-a829-6c126f8bb7f8)
 >   * 인덱스 파일은 일반적으로 원본 파일보다 훨씬 작다.
 >   * 두 가지 기본 종류의 인덱스:
 >   * Ordered indices: search keys는 정렬된 순서로 저장된다.
@@ -31,9 +31,9 @@
 
 ## Dense Index Files
 >   * Dense index - 파일의 모든 search key 값에 대해 index record가 나타난다.
->   ![Alt text](image-69.png)
+>   ![image-69](https://github.com/joey0919/database-system/assets/87600842/ee25fb63-b218-440a-9f4d-12da3cb16f2b)
 >   * 밀도가 높은 dept_name sorted on dept_name
->   ![Alt text](image-70.png)
+>   ![image-70](https://github.com/joey0919/database-system/assets/87600842/986bf19a-21fd-45d1-a786-249a0980a6a5)
 
 ## Sparse Index Files (희소 인덱스 파일)
 >   * Sparse Index: 일부 search-key 값에 대해서만 index 레코드를 포함한다.
@@ -47,12 +47,12 @@
 >   * 좋은 절충안
 >       * 클러스터형 인덱스의 경우: 블록의 최소 검색 키 값에 해당하는 파일의 모든 블록에 대한 인덱스 항목이 있는 희소 인덱스 이다.
 >
->           ![Alt text](image-71.png)
+>           ![image-71](https://github.com/joey0919/database-system/assets/87600842/519ca794-5c7a-4bd4-b890-6d7027957beb)
 >       * 비클러스터형 인덱스인 경우: 밀집형 인덱스 위에 희소 인덱스(다단계 인덱스)
 
 ## Secondary Indices Example (보조 인덱스 예)
 >   * 강사 급여분야에 대한 보조 지표
->   ![Alt text](image-72.png)
+>   ![image-72](https://github.com/joey0919/database-system/assets/87600842/37510c19-37ac-46b9-9de9-9e64b24399c2)
 >   * 인덱스 레코드는 특정 검색 키 값을 가진 모든 실제 레코드에 대한 포인터가 포함된 버킷을 가리킨다.
 >   * 보조 인덱스는 조밀해야 한다.
 
@@ -72,7 +72,7 @@
 >       * 내부 인덱스 - 기본 인덱스 파일
 >   * 외부 인덱스가 너무 커서 주 메모리에 맞지 않으면 또 다른 수준의 인덱스가 생성될 수 있다.
 >   * 파일에서 삽입하거나 삭제할 때 모든 수준의 인덱스를 업데이트 해야된다.
->   ![Alt text](image-73.png)
+>   ![image-73](https://github.com/joey0919/database-system/assets/87600842/cbc41f53-65fc-4a6e-81c6-ef6a03bf823a)
 
 ## Index Update: Deletion
 >   * 삭제된 레코드가 파일에서 특정 search-key 값을 가진 유일한 레코드인 경우 해당 검색키가 index에서 삭제된다.
@@ -108,7 +108,7 @@
 >   * 단점:
 >       * 추가 삽입 및 삭제 오버헤드, 공간 오버헤드
 >   * B+트리의 장점이 단점보다 중요하다
->   ![Alt text](image-74.png)
+>   ![image-74](https://github.com/joey0919/database-system/assets/87600842/94e81c6e-16cc-4fc2-88db-2459e835db44)
 >   * 루트에서 리프까지의 모든 경로의 길이는 동일하다.
 >   * 루프나 리프가 아닌 각 노드는 [n/2] ~ n
 >   * 리프 노드는 [(n-1)/2] 와 n-1 사이 값
@@ -117,7 +117,7 @@
 >       * 루트가 리프인 경우(즉, 트리에 다른 노드가 없는 경우) 0 ~ (N-1)
 
 ## B+ 트리 노드 예제
->   ![Alt text](image-75.png)
+>   ![image-75](https://github.com/joey0919/database-system/assets/87600842/7235b099-ed78-4b0e-aa40-e31e96bd380b)
 >   * 리프 노드에는 3~5개의 값이 있어야 한다 ((n–1)/2 and n –1, with n = 6).
 >   * 루트 이외의 리프가 아닌 노드에는 3~6개의 하위 노드가 있어야 한다.  (n/2 and n with n =6).
 >   * 루트에는 자식이 2명이상 있어야 한다.
